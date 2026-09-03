@@ -17,6 +17,41 @@
     />
     <meta property="og:image" content="/favicon.svg" />
     <meta property="og:locale" content="en_ZW" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Inter, 'Segoe UI', Roboto, sans-serif;
+        background: #0f172a;
+        color: #f8fafc;
+      }
+
+      .fallback {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .fallback__card {
+        max-width: 42rem;
+        border: 1px solid rgba(148, 163, 184, 0.3);
+        background: rgba(15, 23, 42, 0.75);
+        border-radius: 1rem;
+        padding: 2rem;
+      }
+
+      .fallback__title {
+        margin: 0 0 0.75rem;
+        font-size: clamp(1.5rem, 4vw, 2.5rem);
+      }
+
+      .fallback__text {
+        margin: 0;
+        color: #cbd5e1;
+        line-height: 1.6;
+      }
+    </style>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -39,6 +74,17 @@
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <main class="fallback">
+        <section class="fallback__card">
+          <h1 class="fallback__title">Lovelle K Musadogera</h1>
+          <p class="fallback__text">
+            This portfolio uses JavaScript to load the full experience. Please enable JavaScript, then
+            refresh the page to view the complete website.
+          </p>
+        </section>
+      </main>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
