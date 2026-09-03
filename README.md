@@ -25,7 +25,7 @@ npm run preview
 
 - **Vercel:** import repository, framework preset = Vite.
 - **Netlify:** build command `npm run build`, publish directory `dist`.
-- **GitHub Pages:** build with `npm run build` and deploy the `dist` folder using your preferred Pages action/workflow.
+- **GitHub Pages:** this repo includes `.github/workflows/deploy-pages.yml` to build and deploy `dist` on pushes to `main` (set Pages source to **GitHub Actions** in repository settings).
 
 ## Files created
 
