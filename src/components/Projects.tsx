@@ -1,4 +1,4 @@
-import { ExternalLink, FolderGit2, Github, X } from 'lucide-react'
+import { Code2, ExternalLink, FolderGit2, X } from 'lucide-react'
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import { useState } from 'react'
 import { projects, type Project } from '../data/projects'
@@ -132,7 +132,7 @@ const Projects = () => {
                   href={selectedProject.githubUrl}
                   className="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-800 hover:border-sky-500 dark:border-slate-700 dark:text-slate-100"
                 >
-                  <Github size={16} /> GitHub
+                  <Code2 size={16} /> GitHub
                 </a>
                 <a
                   href={selectedProject.demoUrl}

@@ -1,5 +1,6 @@
 import { Mail, MapPin, Phone } from 'lucide-react'
-import { FormEvent, useState } from 'react'
+import { useState } from 'react'
+import type { FormEvent } from 'react'
 import { CONTACT_FORM_CONFIG } from '../config/contact'
 import SectionHeading from './SectionHeading'
 
